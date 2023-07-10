@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O.O.O</title>
+    <script src="https://kit.fontawesome.com/976f26d2bb.js" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <nav id="navbar">
+        <div class="navbar__logo">
+            <a href="#"><h1 class="navbar__logo__item">O.O.O</h1></a>
+        </div>
+        <h1 id="clock" style="color: black;">clock</h1>
+        <ul class="navbar__menu">
+            <li class="navbar__menu__item">닉네임</li>
+            <li class="navbar__menu__item"><i class="fa-solid fa-bars"></i></li>
+        </ul>
+    </nav>
+
+    <script>
+        var Target = document.getElementById("clock");
+        function clock() {
+            var time = new Date();
+
+            var month = time.getMonth();
+            var date = time.getDate();
+            var day = time.getDay();
+            var week = ['일', '월', '화', '수', '목', '금', '토'];
+
+            var hours = time.getHours();
+            var minutes = time.getMinutes();
+            var seconds = time.getSeconds();
+
+            Target.innerText = 
+            `${month + 1}월 ${date}일 ${week[day]}요일 ` +
+            `${hours < 10 ? `0${hours}` : hours}:${minutes < 10 ? `0${minutes}` : minutes}:${seconds < 10 ? `0${seconds}` : seconds}`;
+                
+        }
+        clock();
+        setInterval(clock, 1000); // 1초마다 실행
+    </script>
+    <div class="container-left">
+        <div class="Todotitle">
+            <h1 class="app-title">To Do List</h1>
+        </div>
+        <div class="leftlist">
+            완료한 항목수/전체 항목수
+        </div>
+        <div class="appendbox">
+            <form class="todo-form">
+                <input type="text" id="whattodo" placeholder="할 일을 입력하세요.">
+                <input id="submitbtn" type="submit" value="추가하기">
+            </form>
+        </div>
+        <ul class="todo-box"></ul>
+    </div>
+    
+</body>
+<script src="app.js" defer></script>
+</html>
