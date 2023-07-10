@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>O.O.O</title>
     <script src="https://kit.fontawesome.com/976f26d2bb.js" crossorigin="anonymous"></script>
-    
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
@@ -16,7 +16,7 @@
         <h1 id="clock" style="color: black;">clock</h1>
         <ul class="navbar__menu">
             <li class="navbar__menu__item">닉네임</li>
-            <li class="navbar__menu__item"><i class="fa-solid fa-bars"></i></li>
+            <li class="navbar__menu__item"><i id="side-bar-btn" class="fa-solid fa-bars" onclick="showBar()"></i></li>
         </ul>
     </nav>
 
@@ -57,7 +57,32 @@
         </div>
         <ul class="todo-box"></ul>
     </div>
-    
+    <div class="container-right">
+        <table>
+            <tr>
+                <td>
+                    <textarea id="memo" spellcheck="false"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p id="complete-text">오늘의 Complete</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p id="rate">"<span id="number">100</span>" %</p>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <!-- 사이드 바 -->
+    <div id="side">
+        <div id="side-bar" style="display: none; width: 100px; margin: 1% 0%;">
+            ffffff
+        </div>
+    </div>
 </body>
-<script src="app.js" defer></script>
+<script src="app.js"></script>
+<script src="script.js"></script>
 </html>
