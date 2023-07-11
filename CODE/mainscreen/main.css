@@ -93,6 +93,7 @@ li {
 }
 .leftlist{
     font-size: var(--font-medium);
+    padding-bottom: 10px;
 }
 /* div.right */
 .container-right{
@@ -145,3 +146,12 @@ li {
 }
 
 /* speech api */
+#whattodo{
+    width: 300px;
+    height: 35px;
+    font-size: 25px;
+}
+button, #submitbtn {
+    height: 35px;
+    font-size: 20px;
+}
