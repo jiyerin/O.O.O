@@ -100,7 +100,7 @@ function checkTodo(e)
 {
     const {target : span} = e;
     const li =  span.parentNode;
-    li.style.color = "#ccc";
+    li.style.color = "white";
     li.style.textDecoration="line-through";
     todoList.forEach( currentElement => {
         if(currentElement.id ==  Number(li.id))
