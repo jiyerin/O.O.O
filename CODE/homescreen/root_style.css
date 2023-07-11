@@ -1,0 +1,34 @@
+/* Import Font */
+
+@font-face {
+    font-family: 'KOTRAHOPE';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/KOTRAHOPE.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 커스텀 속성 */
+
+:root {
+    /* Color */
+    --color-skyblue: #B0E1FA;
+    --color-light-pink: #FBD6E3;
+    --color-deep-blue: #5ED1E1;
+    --color-light-green: #CAFDBF;
+    --color-light-blue: #D3FBFB;
+    --color-baige:#FBF0EA;
+    --color-greenblue:#A9EDE9;
+    --color-dark-pink:#E8BDDB;
+    --color-deep-pink: #FEB2BE;
+    --color-deep-baige: #FBDD97;
+    /* Font size */
+    --font-large: 48px;
+    --font-medium: 28px;
+    --font-regular: 18px;
+    --font-small: 16px;
+    --font-micro: 14px;
+    /* Font weight */
+    --weight-bold: 700;
+    --weight-semi-bold: 600;
+    --weight-regular: 400;
+}

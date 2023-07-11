@@ -1,0 +1,74 @@
+/* 전체 */
+
+*{
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'KOTRAHOPE';
+}
+
+/* 바깥 div 수평 수직 정렬하기 */
+
+#container{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+/* 도움말 버튼 */
+
+button{
+    position: fixed;
+    top: var(--font-medium);
+    right: var(--font-medium);
+    width: var(--font-medium);
+    height: var(--font-medium);
+    border-radius: 100%;
+    background-color: var(--color-baige);
+    font-size: var(--font-regular);
+}
+
+/* 제목 */
+
+#title{
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: var(--font-large);
+    /* 형광펜 효과 */
+    background: linear-gradient(to top, var(--color-deep-baige) 50%, transparent 50%);
+    padding: 0px 10px;
+}
+
+/* 테이블 및 폼 */
+
+th{
+    padding: 10px;
+    font-size: var(--font-medium);
+}
+input{
+    width: 100%;
+    padding: 2px;
+    border: 1px solid black;
+    font-size: var(--font-regular);
+}
+input:hover{
+    cursor: pointer;
+}
+input[type=submit]{
+    width: 30%;
+    border-radius: 8px;
+    background-color: var(--color-light-green);
+}
+
+/* 로그인 링크 */
+
+#login-link{
+    margin-top: 20px;
+    font-size: var(--font-regular);
+}
+#login-link a{
+    margin-left: 20px;
+}
