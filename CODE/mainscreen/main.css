@@ -95,6 +95,9 @@ li {
     font-size: var(--font-medium);
     padding-bottom: 10px;
 }
+li button {
+    margin-left: 10px;
+}
 /* div.right */
 .container-right{
     width: 50%;
