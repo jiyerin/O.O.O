@@ -125,11 +125,11 @@ li {
 #complete-text{
     text-align: left;
     font-size: var(--font-medium);
-    padding: 2%;
+    padding: 1%;
 }
 #rate{
     font-size: var(--font-large);
-    padding: 1%;
+    padding-bottom: 0%;
     text-decoration: underline;
 }
 /* side-bar */
