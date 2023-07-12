@@ -56,8 +56,13 @@ function showBar(){
 if(localStorage.getItem("memo") != null){
     memoArea.innerText = JSON.parse(localStorage.getItem("memo"));
 }
-
 function saveMemo(){
     localStorage.setItem("memo", JSON.stringify(memoArea.value));
     alert("저장되었습니다!")
 }
+
+// 창을 닫을 때 변경 사항이 있을 경우 경고 표시
+
+addEventListener('beforeunload', checkToExit => { 
+    checkToExit.preventDefault();
+});
