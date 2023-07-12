@@ -100,7 +100,7 @@ function checkTodo(e)
 {
     const {target : span} = e;
     const li =  span.parentNode;
-    li.style.color = "white";
+    li.style.color = "#ccc";
     li.style.textDecoration="line-through";
     todoList.forEach( currentElement => {
         if(currentElement.id ==  Number(li.id))
@@ -128,7 +128,7 @@ function availabilityFunc() {
 function startRecord() {
     console.log("시작");
   
-    // ⏺️클릭 시 음성인식을 시작한다.
+    // 클릭 시 음성인식을 시작한다.
     recognition.addEventListener("speechstart", () => {
       console.log("인식");
     });
@@ -146,7 +146,7 @@ function startRecord() {
   
     recognition.start();
   }
-  //  🛑 클릭 시 종료(안 눌러도 음성인식은 알아서 종료됨)
+  //  클릭 시 종료(안 눌러도 음성인식은 알아서 종료됨)
   function endRecord() {
     console.log("종료");
     recognition.stop(); // 음성인식을 중단하고 중단까지의 결과를 반환
