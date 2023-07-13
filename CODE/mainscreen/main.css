@@ -76,6 +76,7 @@ li {
     cursor: pointer;
     font-size: 25px;
 }
+
 /* div.left */
 .container-left{
     width: 50%;
@@ -135,17 +136,70 @@ li button {
     padding-bottom: 0%;
     text-decoration: underline;
 }
-/* side-bar */
 
-#side{
+/* 사이드 */
+#container{
     position: fixed;
-    top: 107px;
-    right: 0px;
+    right: 0;
+    padding: 20px;
 }
-#side-bar{
-    width: 80px;
-    height: 500px;
-    background-color: var(--color-deep-pink);
+/* 사이드 버튼 */
+#check_box {
+    display: none;
+}
+#check_box + label { /* #check_box와 그의 형제 태그인 label을 함께 */
+    position: relative;
+    display: block;
+    width: 30px;
+    height: 30px;
+    z-index: 2;
+    cursor: pointer;
+}
+#check_box + label > span {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 5px;
+    background: black;
+    border-radius: 5px;
+    transition: all 300ms;
+}
+/* span : 클릭 선 */
+#check_box:checked + label > span:nth-child(1) {
+    top: 50%;
+    transform: translate(0, -50%);
+    transform: rotate(45deg);
+}
+#check_box + label > span:nth-child(2) {
+    top: 50%;
+    transform: translate(0, -50%);
+} 
+#check_box:checked + label > span:nth-child(2) {
+    opacity: 0;
+} 
+#check_box + label > span:nth-child(3) {
+    bottom: 0;
+} 
+#check_box:checked + label > span:nth-child(3) {
+    top: 50%;
+    transform: translate(0, -50%);
+    transform: rotate(-45deg);
+}
+/* 사이드 */
+#side_menu {
+    position: fixed;
+    top: 0px;
+    right: -200px;
+    z-index: 1;
+    width: 200px;
+    height: 100%;
+    background-color: greenyellow;
+    padding-top: 60px;
+    box-sizing: border-box;
+    transition: all 300ms;
+} 
+#check_box:checked + label + #side_menu {
+    right: 0;
 }
 
 /* speech api */
