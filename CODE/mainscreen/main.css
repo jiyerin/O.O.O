@@ -80,7 +80,6 @@ li {
 /* div.left */
 .container-left{
     width: 50%;
-    height: 520px;
     float: left;
     box-sizing: border-box;
     background-color: var(--color-deep-baige);
@@ -98,6 +97,13 @@ li {
 }
 li button {
     margin-left: 10px;
+}
+/* todo-box scroll */
+.todo-box {
+    overflow: scroll;
+    height: 265px;
+    padding: 20px;
+    overflow-x:hidden
 }
 /* div.right */
 .container-right{
