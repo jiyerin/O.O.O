@@ -28,11 +28,19 @@
                   <span></span>
                 </label>
                 <div id="side_menu">
-                  <ul>
-                    <li><a href="#">menu1</a></li>
-                    <li><a href="#">menu2</a></li>
-                    <li><a href="#">menu3</a></li>
-                  </ul>
+                    <p>사용법</p>
+                    <ul>
+                        <li class="side_li">마이크 버튼을 눌러 음성 녹음을 시작하고 정지 버튼을 눌러 종료합니다.</li>
+                        <li class="side_li">추가하기를 누르시면 항목이 저장됩니다.</li>
+                        <li class="side_li">메모 입력란에 메모를 하신 후 '저장하기'를 눌러 저장하세요.</li>
+                        <li class="side_li">회원님의 to do list 달성률이 계산되어 표시됩니다.</li>
+                    </ul>
+                    <p>제작자</p>
+                    <ul>
+                        <li class="side_li">지예린 (@jiyerin)</li>
+                        <li class="side_li">신유진 (@gwonbe)</li>
+                    </ul>
+                    <p id="side_logo">O.O.O</p>
                 </div>
             </div>
         </ul>
@@ -85,7 +93,7 @@
         <table>
             <tr>
                 <td>
-                    <textarea id="memo" spellcheck="false"></textarea>
+                    <textarea id="memo" spellcheck="false" placeholder="MEMO"></textarea>
                     <br>
                     <button id="saveBtn" onclick="saveMemo()">저장하기</button>
                 </td>

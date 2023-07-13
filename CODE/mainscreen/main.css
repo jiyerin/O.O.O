@@ -201,6 +201,25 @@ li button {
 #check_box:checked + label + #side_menu {
     right: 0;
 }
+#side_menu{
+    padding: 150px 10px 0px 10px;
+    font-size: var(--font-regular);
+}
+#side_menu ul{
+    margin: 0px 20px;
+}
+#side_menu ul li{
+    display:list-item;
+    list-style-type: circle;
+}
+#side_logo{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    padding: 10px 20px;
+    text-align: right;
+    font-size: var(--font-medium);
+}
 
 /* speech api */
 #whattodo{
