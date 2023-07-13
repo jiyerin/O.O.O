@@ -1,4 +1,4 @@
-const todoInput = document.querySelector("input");
+const todoInput = document.querySelector(".todo-form input");
 const todo = document.querySelector(".todo-box");
 const submitBtn = document.getElementById("submitbtn");
 
