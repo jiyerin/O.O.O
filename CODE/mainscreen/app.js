@@ -162,6 +162,6 @@ for(var i=0; i<todoList.length; i++){
 }
 var count = document.getElementById("count");
 var text = cnt + "/" + todoList.length;
-var persent = cnt / todoList.length * 100;
-console.log(persent);
+var percent = cnt / todoList.length * 100;
+console.log(percent);
 count.innerHTML += text;
