@@ -80,7 +80,7 @@ li {
 /* div.left */
 .container-left{
     width: 50%;
-    height: 500px;
+    height: 520px;
     float: left;
     box-sizing: border-box;
     background-color: var(--color-deep-baige);
@@ -102,7 +102,6 @@ li button {
 /* div.right */
 .container-right{
     width: 50%;
-    height: 500px;
     float: right;
     box-sizing: border-box;
     background-color: var(--color-skyblue);
@@ -130,11 +129,12 @@ li button {
     text-align: left;
     font-size: var(--font-medium);
     padding: 1%;
+    margin: 0px;
 }
 #rate{
     font-size: var(--font-large);
-    padding-bottom: 0%;
     text-decoration: underline;
+    margin: 0px;
 }
 
 /* 사이드 */
