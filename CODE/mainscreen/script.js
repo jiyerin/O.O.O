@@ -23,6 +23,18 @@ $({ val : 0 }).animate({ val : goal }, {
     - complete : 애니메이션이 끝난 후 실행될 함수
 */
 
+var cnt = 0;
+for(var i=0; i<todoList.length; i++){
+    console.log(todoList[i]);
+    if(todoList[i].checked == 1) cnt++;
+}
+var count = document.getElementById("count");
+var text = cnt + "/" + todoList.length;
+var percent = cnt / todoList.length * 100;
+console.log(percent);
+count.innerHTML += text;
+
+
 // 메모 관련
 
 if(localStorage.getItem("memo") != null){
