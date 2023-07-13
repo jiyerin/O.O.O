@@ -103,8 +103,22 @@ li button {
     overflow: scroll;
     height: 265px;
     padding: 20px;
-    overflow-x:hidden
+    overflow-x:hidden;
 }
+.todo-box::-webkit-scrollbar {
+    width: 15px;
+  }
+.todo-box::-webkit-scrollbar-thumb {
+    background-color: var(--color-deep-baige);
+    border-radius: 10px;
+    background-clip: padding-box;
+    border: 3px solid transparent;
+  }
+.todo-box::-webkit-scrollbar-track {
+    background-color: var(--color-deep-baige);
+    border-radius: 10px;
+    box-shadow: inset 0px 0px 5px white;
+  }
 /* div.right */
 .container-right{
     width: 50%;
