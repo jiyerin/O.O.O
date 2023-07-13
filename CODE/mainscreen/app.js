@@ -153,3 +153,15 @@ function startRecord() {
   }
   
   window.addEventListener("load", availabilityFunc);
+
+
+var cnt = 0;
+for(var i=0; i<todoList.length; i++){
+    console.log(todoList[i]);
+    if(todoList[i].checked == 1) cnt++;
+}
+var count = document.getElementById("count");
+var text = cnt + "/" + todoList.length;
+var persent = cnt / todoList.length * 100;
+console.log(persent);
+count.innerHTML += text;
