@@ -28,8 +28,47 @@ button{
     border-radius: 100%;
     background-color: var(--color-baige);
     font-size: var(--font-regular);
+    cursor: pointer;
 }
-
+#popup {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: ;
+    z-index: 3;
+}
+#popmenu {
+    position:absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 700px;
+    height: 500px;
+    text-align: center;
+    background: var(--color-baige);
+    border-radius: 20px;
+}
+#popmenu p {
+    margin-top: 50px;
+    font-size: var(--font-large);
+}
+#popmenu span {
+    font-size: var(--font-medium);
+    line-height: 45px;
+}
+.exit {
+    position: absolute;
+    left: 50%;
+    bottom: 10px;
+    transform: translate(-50%,0);
+    width: 80px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    background: var(--color-light-blue);
+    cursor: pointer;
+}
 /* 제목 */
 
 p{

@@ -5,10 +5,23 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="root_style.css">
     <link rel="stylesheet" href="home_style.css">
+    <script src="https://kit.fontawesome.com/976f26d2bb.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 <body>
     <!-- 도움말 버튼 -->
-    <button>?</button>
+    <div id="popup">
+        <div id="popmenu">
+            <p>안녕하세요.</p><br>
+            <span>"Voice To Do List"는 음성인식 API기술을 활용한 투두리스트입니다.</span><br><br>
+            <span>1. 닉네임을 입력 후 "입장하기"버튼을 눌러주세요.</span><br>
+            <span>2. <i class="fa-solid fa-microphone"></i> 버튼을 누르면 음성인식을 시작합니다. </span><br>
+            <span>3. <i class="fa-solid fa-circle-stop"></i> 버튼을 누르면 음성인식을 종료합니다.</span><br>
+            <span>4. "추가하기"를 누르시면 항목이 저장됩니다.</span><br>
+            <div class="exit">닫기</div>
+        </div>
+    </div>
+    <button id="helpBtn">?</button>
     <!-- 메인 콘텐츠 -->
     <div id="container">
         <p>To Do List</p>
@@ -34,4 +47,5 @@
         </form>
     </div>
 </body>
+<script src="home.js"></script>
 </html>
