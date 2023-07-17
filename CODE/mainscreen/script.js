@@ -1,7 +1,11 @@
+const nickname = document.getElementById("nickname");
 const goal= document.getElementById("number").innerText * 1;
 const saveBtn = document.getElementById("saveBtn");
 const memoArea = document.getElementById("memo");
 let isShowing = false;
+
+// 상단에 닉네임 삽입하기
+nickname.innerHTML = JSON.parse(localStorage.getItem("name")) + " 님";
 
 // 달성률 애니메이션
 
@@ -33,7 +37,6 @@ var text = cnt + "/" + todoList.length;
 var percent = cnt / todoList.length * 100;
 console.log(percent);
 count.innerHTML += text;
-
 
 // 메모 관련
 

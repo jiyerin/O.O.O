@@ -11,16 +11,17 @@ $(document).ready(function(){
 
 const form = document.getElementById("form");
 const submit = document.getElementById("submit");
+let pName;
 let pID;
 let pPW;
 
 function checkLogin(){
+    pName = document.getElementById("input-name").value;
     pID = document.getElementById("input-id").value;
     pPW = document.getElementById("input-pw").value;
-    console.log("id : " + pID);
-    console.log("pw : " + pPW);
     if( (pID == "ooo" || pID == "OOO") && (pPW == 1234) ){
         location.href = "../mainscreen/main.html";
+        localStorage.setItem("name", JSON.stringify(pName));
     }else{
         alert("로그인에 실패하셨습니다.");
     }
