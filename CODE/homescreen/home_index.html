@@ -25,21 +25,21 @@
     <!-- 메인 콘텐츠 -->
     <div id="container">
         <p>To Do List</p>
-        <form>
+        <form id="form">
             <!-- 테이블 전체 3행3열 -->
             <table>
                 <tr>
                     <th>ID</th>
                     <th> : </th>
-                    <th><input type="text"></th>
+                    <th><input type="text" id="input-id"></th>
                 </tr>
                 <tr>
                     <th>PW</th>
                     <th> : </th>
-                    <th><input type="password"></th>
+                    <th><input type="password" id="input-pw"></th>
                 </tr>
                 <tr>
-                    <th colspan="3"><input type="submit" value="입장하기"></th>
+                    <th colspan="3"><input type="button" id="submit" value="입장하기" onclick="checkLogin()"></th>
                 </tr>
             </table>
         </form>
