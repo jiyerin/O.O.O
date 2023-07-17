@@ -20,8 +20,8 @@ function checkLogin(){
     pID = document.getElementById("input-id").value;
     pPW = document.getElementById("input-pw").value;
     if( (pID == "ooo" || pID == "OOO") && (pPW == 1234) ){
-        location.href = "../mainscreen/main.html";
         localStorage.setItem("name", JSON.stringify(pName));
+        location.href = "../mainscreen/main.html";
     }else{
         alert("로그인에 실패하셨습니다.");
     }
