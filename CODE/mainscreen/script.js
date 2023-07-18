@@ -9,15 +9,27 @@ nickname.innerHTML = JSON.parse(localStorage.getItem("name")) + " 님";
 
 // 달성률 애니메이션
 
+var cnt = 0;
+for(var i=0; i<todoList.length; i++){
+    console.log(todoList[i]);
+    if(todoList[i].checked == 1) cnt++;
+}
+var number = document.getElementById("number");
+var count = document.getElementById("count");
+var text = cnt + "/" + todoList.length;
+var percent = cnt / todoList.length * 100;
+count.innerHTML = "완료한 항목수 / 전체 항목수 : " + text;
+number.innerHTML =  Math.floor(percent) ;
+
 $({ val : 0 }).animate({ val : goal }, {
     duration: 2000,
     step: function() {
         var num = Math.floor(this.val);
-        $("#number").text(num);
+        $("number").text(num);
     },
     complete: function() {
         var num = Math.floor(this.val);
-        $("#number").text(num);
+        $("number").text(num);
     }
 });
 
@@ -26,17 +38,6 @@ $({ val : 0 }).animate({ val : goal }, {
     - step : val 값에 따라 스텝별로 애니메이션을 진행하는 함수
     - complete : 애니메이션이 끝난 후 실행될 함수
 */
-
-var cnt = 0;
-for(var i=0; i<todoList.length; i++){
-    console.log(todoList[i]);
-    if(todoList[i].checked == 1) cnt++;
-}
-var count = document.getElementById("count");
-var text = cnt + "/" + todoList.length;
-var percent = cnt / todoList.length * 100;
-console.log(percent);
-count.innerHTML += text;
 
 // 메모 관련
 
