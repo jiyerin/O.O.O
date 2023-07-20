@@ -1,12 +1,27 @@
-const nickname = document.getElementById("nickname");
-const saveBtn = document.getElementById("saveBtn");
-const memoArea = document.getElementById("memo");
-let isShowing = false;
-
 // 상단에 닉네임 삽입하기
+
+const nickname = document.getElementById("nickname");
 
 if(JSON.parse(localStorage.getItem("name")) == null) nickname.innerHTML = "<a href='../homescreen/home_index.html'>로그인</a>";
 else nickname.innerHTML = JSON.parse(localStorage.getItem("name")) + " 님";
+
+// 오늘의 목표 설정하기
+
+let todaysGoal;
+
+if(JSON.parse(localStorage.getItem("todays-goal")) == null){
+    todaysGoal = document.getElementById("todays-goal").value;
+    localStorage.setItem("todays-goal", JSON.stringify(todaysGoal));
+}else{
+    todaysGoal = JSON.parse(localStorage.getItem("todays-goal"));
+    document.getElementById("todays-goal").value = todaysGoal;
+}
+
+function saveTodaysGoal(){
+    todaysGoal = document.getElementById("todays-goal").value;
+    localStorage.setItem("todays-goal", JSON.stringify(todaysGoal));
+    alert("오늘의 목표를 설정했습니다!");
+}
 
 // 달성률 구하기
 
@@ -46,6 +61,8 @@ $({ val : 0 }).animate({ val : goal }, {
 */
 
 // 메모 관련
+
+const memoArea = document.getElementById("memo");
 
 if(localStorage.getItem("memo") != null){
     memoArea.innerText = JSON.parse(localStorage.getItem("memo"));
