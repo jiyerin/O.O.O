@@ -243,6 +243,11 @@ li button {
     font-size: var(--font-medium);
 }
 
+#side_menu p{
+    font-size: var(--font-large);
+    margin: 0px;
+    margin-bottom: 10px;
+}
 /* speech api */
 #whattodo{
     width: 300px;
