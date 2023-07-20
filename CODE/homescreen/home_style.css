@@ -66,8 +66,9 @@ button{
     height: 40px;
     text-align: center;
     line-height: 40px;
-    background: var(--color-light-blue);
+    background: var(--color-deep-baige);
     cursor: pointer;
+    border-radius: 10px;
 }
 /* 제목 */
 
