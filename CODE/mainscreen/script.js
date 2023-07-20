@@ -1,14 +1,32 @@
 const nickname = document.getElementById("nickname");
-const goal= document.getElementById("number").innerText * 1;
 const saveBtn = document.getElementById("saveBtn");
 const memoArea = document.getElementById("memo");
 let isShowing = false;
 
 // 상단에 닉네임 삽입하기
-nickname.innerHTML = JSON.parse(localStorage.getItem("name")) + " 님";
+
+if(JSON.parse(localStorage.getItem("name")) == null) nickname.innerHTML = "<a href='../homescreen/home_index.html'>로그인</a>";
+else nickname.innerHTML = JSON.parse(localStorage.getItem("name")) + " 님";
+
+// 달성률 구하기
+
+var cnt = 0;
+for(var i=0; i<todoList.length; i++){
+    if(todoList[i].checked == 1) cnt++;
+}
+var number = document.getElementById("number");
+var count = document.getElementById("count");
+var text = cnt + "/" + todoList.length;
+var percent;
+
+if(cnt==0 || todoList.length==0) percent = 0;
+else percent = cnt / todoList.length * 100;
+number.innerHTML = Math.floor(percent);
+count.innerHTML = "완료한 항목수 / 전체 항목수 : " + text;
 
 // 달성률 애니메이션
 
+const goal = document.getElementById("number").innerText * 1;
 $({ val : 0 }).animate({ val : goal }, {
     duration: 2000,
     step: function() {
@@ -26,17 +44,6 @@ $({ val : 0 }).animate({ val : goal }, {
     - step : val 값에 따라 스텝별로 애니메이션을 진행하는 함수
     - complete : 애니메이션이 끝난 후 실행될 함수
 */
-
-var cnt = 0;
-for(var i=0; i<todoList.length; i++){
-    console.log(todoList[i]);
-    if(todoList[i].checked == 1) cnt++;
-}
-var count = document.getElementById("count");
-var text = cnt + "/" + todoList.length;
-var percent = cnt / todoList.length * 100;
-console.log(percent);
-count.innerHTML += text;
 
 // 메모 관련
 
