@@ -146,16 +146,11 @@ li button {
     font-size: var(--font-regular);
     border-radius: 20px;
 }
-.complete-text{
+#complete-text{
     text-align: left;
     font-size: var(--font-medium);
     padding: 1%;
     margin: 0px;
-}
-#todays-goal{
-    width: 40px;
-    text-align: center;
-    font-size: var(--font-medium);
 }
 #rate{
     font-size: var(--font-large);
