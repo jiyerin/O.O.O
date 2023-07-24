@@ -1,6 +1,5 @@
 # O.O.O (Voice To Do List)
 URL https://github.com/jiyerin/O.O.O
-URL 
 ![image](https://github.com/jiyerin/O.O.O/assets/86339431/97b27268-ce7c-4bf4-b55a-be84b11ff116)
 ![image](https://github.com/jiyerin/O.O.O/assets/86339431/444d004e-d033-4c64-889a-762454e43c4f)
 
