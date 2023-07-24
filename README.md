@@ -11,7 +11,8 @@
 - `Web Speech API`를 사용하여 음성인식으로 입력할 수 있도록 구현했습니다.
 - 웹에 접속해 있는 동안 현재시간을 볼 수 있도록 기능을 추가했습니다.
 
-#Technologies
+# Technologies
+-----------------------
 ## HTML
 ## CSS
 ## Javascript
